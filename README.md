@@ -24,5 +24,5 @@ $ make clean
 ## Usage
 
 ```
-$ <repo directory>/treehash <file1> <file2> ...
+$ <repo directory>/treehash <file>
 ```
