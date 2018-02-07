@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -o nounset
+set -o errexit
+
+SCRIPT_FILE="$(perl -e 'use Cwd "abs_path"; print abs_path(shift)' "${BASH_SOURCE[0]}")"
+SCRIPT_DIR="$(dirname "$SCRIPT_FILE")"
+
+exec java -jar "$SCRIPT_DIR"/TreeHash.jar "$@"
